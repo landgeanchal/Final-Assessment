@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name</title>
+    <script>
+        // Function to get user name and display a Name
+        function displayName() {
+            // Prompt the user for their name
+            var name = prompt("Enter your name:");
+
+            // Check if the user entered a name
+            if (name !== null && name !== "") {
+                // Display message with the entered name
+                alert("Hello, " + name + "!");
+            } else {
+                // Display a message if the user didn't enter a name
+                alert("Hello, anonymous!");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!-- Button to trigger the greeting -->
+<button onclick="displayName()">Click me</button>
+
+</body>
+</html>
